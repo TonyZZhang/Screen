@@ -3,11 +3,13 @@ from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
  
 # 定义点坐标列表
-points = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+points = [[0, 0, 0], [1, 1, 1], [2, 2, 2]]
  
 # 将点坐标转换为NumPy数组
 pointcloud = np.array(points)
- 
+print(pointcloud[0])
+print(pointcloud[0:2])
+#print(pointcloud[:, 0])
 # 创建三维图形对象
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
